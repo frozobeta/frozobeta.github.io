@@ -1,0 +1,65 @@
+.page-title-span {
+  color:#b9b9b9;
+  font-weight: 100;
+}
+.main-wrap {
+  position: relative;
+  width:60%;
+  margin: auto;
+}
+.your-progress, .your-progress-per {
+  display: inline;
+}
+.your-progress {
+  color: #a1a1a1;
+  font-weight: 300;
+  font-size: 20px;
+}
+.your-progress-per {
+  color:#2496E2;
+  right: 10px;
+  font-size: 27px;
+  font-weight: 300;
+  bottom:10px;
+  vertical-align: middle;
+}
+.video-wrap {
+  position: relative;
+  margin-top: 30px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.video-wrap::before {
+  content: '';
+  position: absolute;
+  width:100%;
+  height:100%;
+  filter: grayscale(100);
+  background-image: url('https://images.unsplash.com/photo-1481137344492-d5a150a97f8b?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=');
+  background-size: 100%;
+  background-attachment: fixed;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+.video-wrap::after {
+  content: '';
+  position: absolute;
+  width:100%;
+  top:0;
+  left:0;
+  height: 100%;
+  background-color:rgba(38, 50, 56, 0.92);
+}
+.video-wrap iframe {
+  width:560px;
+  height: 317px;
+  position: relative;
+  display:block;
+  left: calc(50% - 560px / 2);
+  z-index: +1;
+  padding-bottom: 0;
+  margin: 0;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+}
